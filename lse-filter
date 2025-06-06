@@ -1,0 +1,47 @@
+// ==UserScript==
+// @name         lse.co.uk - Remove Share Chat Filtered Messages
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Removes every annoying div class
+// @author       Tom Matthews
+// @match        https://www.lse.co.uk/ShareChat.html*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=lse.co.uk
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // List of classes to remove from divs
+    const classesToRemove = [
+        // Add more classes here if needed
+        'share-chat-filtered-message',
+        'sp-nav-sponsorship-ad',
+        'sp-incontent-ad',
+        'placement-col'
+    ];
+
+    // Function to remove all div elements with the specified classes
+    const removeFilteredMessages = () => {
+        classesToRemove.forEach(className => {
+            const elements = document.querySelectorAll(`div.${className}`);
+            elements.forEach((element) => {
+                element.remove();
+                console.log(`Removed a div with class: ${className}`);
+            });
+        });
+    };
+
+    // Run the removal function when the page is fully loaded
+    window.addEventListener('load', () => {
+        removeFilteredMessages();
+    });
+
+    // Optionally, observe for dynamically added content
+    const observer = new MutationObserver(() => {
+        removeFilteredMessages();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+
+})();
