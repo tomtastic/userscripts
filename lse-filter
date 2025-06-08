@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         lse.co.uk - Remove Share Chat Filtered Messages
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Removes every annoying div class
 // @author       Tom Matthews
-// @match        https://www.lse.co.uk/ShareChat.html*
+// @include      https://www.lse.co.uk/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=lse.co.uk
+// @downloadURL  https://github.com/tomtastic/userscripts/raw/refs/heads/main/lse-filter.user.js
+// @updateURL    https://github.com/tomtastic/userscripts/raw/refs/heads/main/lse-filter.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -18,6 +20,9 @@
         'share-chat-filtered-message',
         'sp-nav-sponsorship-ad',
         'sp-incontent-ad',
+        'banner-ads',
+        'header__ad-container',
+        'header__logo',
         'placement-col'
     ];
 
