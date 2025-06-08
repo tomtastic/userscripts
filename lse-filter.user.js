@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         lse.co.uk - Remove Share Chat Filtered Messages
 // @namespace    http://tampermonkey.net/
-// @version      0.2
-// @description  Removes every annoying div class
+// @version      20250608
+// @description  Removes several annoying div classes
 // @author       Tom Matthews
 // @include      https://www.lse.co.uk/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=lse.co.uk
-// @downloadURL  https://raw.githubusercontent.com/tomtastic/userscripts/refs/heads/main/lse-filter.user.js
-// @updateURL    https://raw.githubusercontent.com/tomtastic/userscripts/refs/heads/main/lse-filter.user.js
+// @downloadURL  https://github.com/tomtastic/userscripts/raw/main/lse-filter.user.js
+// @updateURL    https://github.com/tomtastic/userscripts/raw/main/lse-filter.user.js
 // @grant        none
 // ==/UserScript==
 
