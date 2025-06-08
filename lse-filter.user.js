@@ -6,8 +6,8 @@
 // @author       Tom Matthews
 // @include      https://www.lse.co.uk/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=lse.co.uk
-// @downloadURL  https://github.com/tomtastic/userscripts/raw/refs/heads/main/lse-filter.user.js
-// @updateURL    https://github.com/tomtastic/userscripts/raw/refs/heads/main/lse-filter.user.js
+// @downloadURL  https://raw.githubusercontent.com/tomtastic/userscripts/refs/heads/main/lse-filter.user.js
+// @updateURL    https://raw.githubusercontent.com/tomtastic/userscripts/refs/heads/main/lse-filter.user.js
 // @grant        none
 // ==/UserScript==
 
