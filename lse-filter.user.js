@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         lse.co.uk - Remove Share Chat Filtered Messages
 // @namespace    http://tampermonkey.net/
-// @version      0.2.1
+// @version      0.2.3
 // @description  Removes every annoying div class
 // @author       Tom Matthews
 // @include      https://www.lse.co.uk/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=lse.co.uk
-// @downloadURL  https://tomtastic.github.io/userscripts/lse-filter.user.js
-// @updateURL    https://tomtastic.github.io/userscripts/lse-filter.user.js
+// @downloadURL  https://raw.githubusercontent.com/tomtastic/userscripts/refs/heads/main/lse-filter.user.js
+// @updateURL    https://raw.githubusercontent.com/tomtastic/userscripts/refs/heads/main/lse-filter.user.js
 // @grant        none
 // @run-at       document-start
 // ==/UserScript==
@@ -16,6 +16,7 @@
     'use strict';
 
     // List of classes to remove from divs
+    // We ditch a bunch of advertising, because we can
     const classesToRemove = [
         // Add more classes here if needed
         'share-chat-filtered-message',
