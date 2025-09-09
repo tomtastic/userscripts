@@ -21,6 +21,7 @@
         // Add more classes here if needed
         'share-chat-filtered-message',
         'sp-nav-sponsorship-ad',
+        'message-overlay',
         'sp-incontent-ad',
         'banner-ads',
         'header__ad-container',
