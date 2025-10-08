@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         lse.co.uk - Remove Share Chat Filtered Messages
 // @namespace    http://tampermonkey.net/
-// @version      0.2.6
+// @version      0.2.7
 // @description  Removes every annoying div/ul class
 // @author       Tom Matthews
 // @include      https://www.lse.co.uk/*
@@ -25,6 +25,7 @@
         'message-overlay',
         'social-bar',
         'sp-main-info__delayed-upsell',
+        'media__flex-container',
         'sp-incontent-ad',
         'banner-ads',
         'header__ad-container',
